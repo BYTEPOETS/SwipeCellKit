@@ -253,6 +253,7 @@ open class SwipeTableViewCell: UITableViewCell {
             actionsView.leftAnchor.constraint(equalTo: rightAnchor).isActive = true
         }
         
+        actionsView.setNeedsUpdateConstraints()
         self.actionsView = actionsView
 
         state = .dragging
