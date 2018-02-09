@@ -391,6 +391,7 @@ extension SwipeTableViewCell {
     func reset() {
         state = .center
         
+        clipsToBounds = false
         actionsView?.removeFromSuperview()
         actionsView = nil
     }
